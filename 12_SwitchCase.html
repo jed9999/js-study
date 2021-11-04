@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso Javascript 12</title>
+    
+    <script>
+
+        var position, msg;
+
+        position = 1;
+
+        switch (position) {
+
+            case 1:
+                msg = "Primeiro Lugar<br>Medalha de Ouro";
+                break;
+
+            case 2:
+                msg = "Segundo Lugar<br>Medalha de Prata";
+                break;
+
+            case 3:
+                msg = "Terceiro Lugar<br>Medalha de Bronze";
+                break;
+                
+            default:
+                msg = "Não foi ao podium";
+        }
+
+
+        switch (position) {
+
+            case 1:
+            case 2:
+            case 3:
+                msg += "<br>Subiu ao Podium";
+                break;
+
+            default:
+                msg += "<br>Não obteve colocação";
+        }
+
+        document.write(msg);
+        
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

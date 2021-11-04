@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso Javascript 15</title>
+
+    <script>
+
+        var num = [5,8,4,9,7,1,0,6,3,2];
+
+        document.write("Array original ")
+        document.write("[");
+        for (i = 0; i < num.length; i++) {
+            document.write(num[i] + ", ");
+        }
+        document.write("]");
+        document.write("<br><br>");
+
+        
+        // Organiza elementos em ordem crescente
+        num.sort();
+        document.write("Array ordenado ")
+        document.write("[");
+        for (i = 0; i < num.length; i++) {
+            document.write(num[i] + ", ");
+        }
+        document.write("]");
+        document.write("<br><br>");
+
+
+        // Inverte a ordem dos elementos (NÃO ORGANIZA)
+        num.reverse();
+        document.write("Array invertido ")
+        document.write("[");
+        for (i = 0; i < num.length; i++) {
+            document.write(num[i] + ", ");
+        }
+        document.write("]");
+        document.write("<br><br>");
+
+
+        // Copia elementos de um array para outro
+        numeros = num.join();
+        document.write("Novo array ")
+        document.write("[");
+        for (i = 0; i < num.length; i++) {
+            document.write(num[i] + ", ");
+        }
+        document.write("]");
+        document.write("<br><br>");
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

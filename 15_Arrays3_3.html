@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso Javascript 15</title>
+
+    <script>
+
+        var obj1 = [];
+        var obj2 = [];
+
+        obj1 = ["Carro", "Moto", "Skate", "Patins", "Caminhonete"];
+        obj2 = ["Escova", "Alicate","Caderno", "Livro", "Revista"];
+
+
+        document.write("Objetos 1 <br>"+"[");
+        for (i = 0; i < obj1.length; i++) {
+            document.write(obj1[i]+", ");
+        }
+        document.write("]");
+        document.write("<br><br>");
+
+
+        document.write("Objetos 2 <br>"+"[");
+        for (i = 0; i < obj2.length; i++) {
+            document.write(obj2[i]+", ");
+        }
+        document.write("]");
+        document.write("<br><br>");
+
+
+        // Concatenação de elementos de 2 vetores
+        var comb = obj1.concat(obj2);
+
+        document.write("Objetos concatenados <br>"+"[");
+        for (i = 0; i < comb.length; i++) {
+            document.write(comb[i]+", ");
+        }
+        document.write("]");
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

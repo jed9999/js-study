@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso Javascript 15</title>
+
+    <script>
+
+        var mochila = [];
+        var pos;
+
+        // Adiciona elemento no fim do array
+        mochila.push("Faca");
+        mochila.push("Corda");
+        mochila.push("Chave");
+        mochila.push("Lanterna");
+
+        // Adiciona elemento no início do array
+        mochila.unshift("Pedra");
+        mochila.unshift("Pederneira");
+        mochila.unshift("Cactus");
+        mochila.unshift("Marreta");
+        mochila.unshift("Aerolito");
+
+        // Busca indice pelo nome
+        pos = mochila.indexOf("Pederneira");
+
+        if (pos < 0) {
+            document.write("Item não está na mochila.");
+        } else {
+            document.write("Item " + mochila[pos] + " está na mochila. <br>Posição: " + pos + "<br><br>");
+        }
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

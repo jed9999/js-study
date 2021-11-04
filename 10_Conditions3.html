@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso Javascript 10</title>
+    
+    <script>
+
+        var nota =10;
+        var res;
+
+        if (nota >= 60) {
+            res = "Aprovado";
+
+            if (nota >= 90) {
+                if (nota == 100){
+                    res += " com excelência";
+                } else {
+                    res += " com louvor";
+                }
+            } else {
+                res += " com nota normal";
+            }
+
+
+        } else if (nota >= 40 && nota < 60) {
+            res = "Recuperação";
+
+
+        } else {
+            res = "Reprovado";
+            if (nota >= 20 && nota < 40) {
+                res += " por nota baixa";
+            } else {
+                res += " com louvor"
+            }
+        }
+        
+        document.write(res);
+        
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
